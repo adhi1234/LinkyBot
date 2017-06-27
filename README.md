@@ -10,5 +10,9 @@ If we run out of people to visit, we will find people via the jobs part of the s
  * Clone the repository  
  * Run the command ```python linkd.py <username> <password>```
  
+ 
+ # Screenshots
+     Coming Soon
+  
  # Contributing 
    If anyone is intrested to be a part of this project drop me a mail ```astromediasnet16@gmail.com```

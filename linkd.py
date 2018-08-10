@@ -21,7 +21,7 @@ def getJobLinks(page):
 	links = []
 	for link in page.find_all('a'):
 		url = link.get('href')
-		if url:		
+		if url:
 			if '/jobs' in url:
 				links.append(url)
 	return links
@@ -46,11 +46,11 @@ def ViewBot(browser):
 				if ID not in visited:
 					pList.append(person)
 					visited[ID] = 1
-		if pList: 
+		if pList:
 			person = pList.pop()
 			browser.get(person)
 			count += 1
-		else: 
+		else:
 			jobs = getJobLinks(page)
 			if jobs:
 				job = random.choice(jobs)
@@ -63,10 +63,10 @@ def ViewBot(browser):
 				print "I'm Lost Exiting"
 				break
 
-		#Output (Make option for this)			
+		#Output (Make option for this)
 		print "[+] "+browser.title+" Visited! \n("\
 			+str(count)+"/"+str(len(pList))+") Visited/Queue)"
-					
+
 
 def Main():
 	print "Opening browser"
